@@ -1,0 +1,37 @@
+# function to create acronym
+def func(project):
+
+# ADD FIRST LETTER
+
+	sp = project[0]
+	
+# Iterate over the complete string and add every next letter to space 
+
+	for i in range(1, len(project)):
+		if project[i-1] == ' ':
+			sp += project[i]
+			
+# Change the output to uppercase 
+
+	sp = sp.upper()
+	return sp
+
+# Multiple strings as input 
+
+a = "Bachelor of Technology"
+print(func(a))
+
+b = "Indian Space Research Organisation"
+print(func(b))
+
+c = "Oh my God"
+print(func(c))
+
+d = "Automated teller machine"
+print(func(d))
+
+e = "Laughing out loud"
+print(func(e))
+
+f = "National Aeronautics Space Administration"
+print(func(f))
